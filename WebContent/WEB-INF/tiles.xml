@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/resources/pages/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/resources/pages/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        
+    </definition>  
+    
+     <definition name="user.definition"  
+        template="/resources/pages/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/resources/pages/userheader.jsp" />  
+        <put-attribute name="body" value="" />  
+        
+    </definition>  
+  
+     <definition name="blank.definition"  
+        template="/resources/userpages/userlayout.jsp">  
+        <put-attribute name="title" value="" />  
+        
+        <put-attribute name="body" value="" />  
+        
+    </definition>  
+  
+  
+        
+    <definition name="predictioninput" extends="user.definition">  
+        <put-attribute name="title" value="Prediction" />  
+        <put-attribute name="body" value="/resources/pages/predictioninput.jsp" />  
+    </definition>  
+        
+    <definition name="viewresult" extends="user.definition">  
+        <put-attribute name="title" value="View Result" />  
+        <put-attribute name="body" value="/resources/pages/viewresult.jsp" />  
+    </definition>    
+    
+    <definition name="error" extends="user.definition">  
+        <put-attribute name="title" value="Error" />  
+        <put-attribute name="body" value="/resources/pages/error.jsp" />  
+    </definition>    
+    
+    <definition name="login" extends="blank.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/resources/pages/login.jsp" />  
+    </definition>    
+    
+  <definition name="register" extends="blank.definition">  
+        <put-attribute name="title" value="Register" />  
+        <put-attribute name="body" value="/resources/pages/register.jsp" />  
+    </definition>    
+
+
+  <definition name="addflight" extends="base.definition">  
+        <put-attribute name="title" value="Add Flight" />  
+        <put-attribute name="body" value="/resources/pages/addflight.jsp" />  
+  </definition> 
+    
+    <definition name="pricesearch" extends="user.definition">  
+        <put-attribute name="title" value="Price Search" />  
+        <put-attribute name="body" value="/resources/pages/pricesearch.jsp" />  
+    </definition>    
+   
+    <definition name="result" extends="user.definition">  
+        <put-attribute name="title" value="Result" />  
+        <put-attribute name="body" value="/resources/pages/result.jsp" />  
+    </definition>    
+   
+   
+             
+  
+</tiles-definitions>  
